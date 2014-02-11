@@ -1,13 +1,14 @@
 # [Antwort](http://internations.github.com/antwort)
 
-### Responsive Layouts for Email
+### Responsive Layouts for Portfolio Email
 ![Responsive Layouts for Email](http://internations.github.com/antwort/images/responsive-graphic-small.png "Responsive Layouts for Email")
 
 Antwort offers responsive layouts for Email that both fits _and_ adapts to client widths. Don't underwhelm desktop users with single column layouts that work for mobile. Antwort offers columns on desktop that automatically become rows on mobile.
 
 Author: Julie Ng ([@jng5](http://twitter.com/jng5))  
-Date: January 2013  
-Version: 0.1.2  
+Author Adapter: Cristiano Acosta
+Date: Feb 2014
+Version: 0.1.3
 
 ## Features
 * Works on mobile: Mail on iOS and Email on Android.
