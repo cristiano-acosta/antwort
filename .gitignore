@@ -1,5 +1,7 @@
 .idea
-*.Thumbs.db
+.idea/**/*
+*.db
+.Thumbs.db
 .DS_Store
 *.sass-cache
 server
