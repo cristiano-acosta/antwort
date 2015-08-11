@@ -6,22 +6,26 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,400italic,600,600italic);
 body { font-family: 'PT Sans', sans-serif;  }
-h1, h2, h3, h4, h5, h6  { font-family: 'Cabin', sans-serif; text-transform:uppercase;  }
-header, article, footer { position:relative; top:0; left:0; width:100%; float:none; }
+h1, h2, h3, h4, h5, h6  { font-family: 'Cabin', sans-serif;  }
+h2 { font-size:18px; }
+h3 { font-size:16px; }
+h4 { font-size:14px; }
+header, article, footer { position:relative; top:0; left:0; width:100%; float:none ; overflow:hidden;}
+.wow { overflow:hidden; }
 main { position:relative; top:0; left:0; width:100%; float:none; }
-
+hr { border:none; margin:5px 0; height:4px; border-radius:5px; }
 /* ========================= class ========================= */
 .bg-black {  background-image: -moz-linear-gradient( 90deg, rgb(8,8,8) 0%, rgb(8,8,8) 50%, rgb(8,8,8) 50%, rgb(8,8,8) 53%); background-image: -webkit-linear-gradient( 90deg, rgb(8,8,8) 0%, rgb(8,8,8) 50%, rgb(8,8,8) 50%, rgb(8,8,8) 53%);  background-image: -ms-linear-gradient( 90deg, rgb(8,8,8) 0%, rgb(8,8,8) 50%, rgb(8,8,8) 50%, rgb(8,8,8) 53%); }
 .bg-black * { color:#ffffff;  }
 .bg-white { background-color: rgb(255, 255, 255) ; }
-.section-title {background: rgb(0, 0, 0); background: transparent; background: rgba(0, 0, 0, 0.8);/* FF3+,Saf3+,Opera 10.10+,Chrome,IE9*/ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);/*IE 5.5-7*/ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000)";/*IE8*/ zoom: 1; position:absolute; top:0; left:0; z-index:9999; height:70px; width:100%; }
+.section-title {background: rgb(0, 0, 0); background: transparent; background: rgba(0, 0, 0, 0.8);/* FF3+,Saf3+,Opera 10.10+,Chrome,IE9gtwq\*/ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);/*IE 5.5-7*/ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000)";/*IE8*/ zoom: 1; position:absolute; top:0; left:0; z-index:9999; height:70px; width:100%; }
 .section-title * { color:#ffffff  }
 .formacao { border-style: solid; border-width: 1px; border-color: rgb(224, 224, 224); border-radius: 10px; background-color: rgb(248, 248, 248); height: 150px; }
 .article { padding:150px 0 150px 0; }
 .col-equalize { height:120px; margin:0; }
 .form-group { margin:0; }
 .row-no-padding   { margin:0;}
-.row-no-padding div[class^='col-'],.row-no-padding div[class*='col-'] { padding:0; }
+.row-no-padding [class^='col-'],.row-no-padding [class*='col-'] { padding:0; }
 /* Colors */
 .bg-darkorange { background:#ff9601; }
 .bg-cyan { background:#57c5f8; }
@@ -41,7 +45,16 @@ nav#main-nav { background:#000000; height: 150px; margin:0; padding:0;  }
 header#header { padding:150px 0 150px 0; }
 /* experiencias */
 #experiencias { }
-#experiencias time { }
+#experiencias ul { padding:30px 0;  }
+#experiencias li { }
+#experiencias h3 { font-size:14px; margin:0 0 5px 0; line-height:1;  }
+#experiencias p { font-size:12px; margin:0 0 5px 0; line-height:1.2; min-height:30px; }
+#experiencias p em {  display:block;}
+#experiencias time { color:#6b6a6a; position:relative; text-align:left; border-bottom:3px solid #151515; display:block; width:100%; height:20px; line-height:20px; }
+#experiencias time span { color:#6b6a6a; text-align:left; position:absolute; left:0; padding:0; top:9px; }
+/* educacao */
+#educacao { }
+#educacao h4 { }
 /* qualificacoes */
 #form-softwares {  }
 #form-softwares .slider.slider-horizontal { width: 100%;}
@@ -52,3 +65,9 @@ header#header { padding:150px 0 150px 0; }
 #form-linguagens .slider.slider-horizontal { width: 100%;}
 #form-linguagens .slider-track { background:#47878a; height:5px; }
 #form-linguagens .slider-handle { background:#ffffff; width:12px; height:12px; }
+/* tabela-preco */
+/* footer */
+footer#footer { background:url("img/footer.jpg") no-repeat fixed; color:#ffffff; }
+footer#footer p { margin:0; }
+footer#footer a {  color:#ffffff; display:block; }
+footer#footer li {   color:#ffffff; }
