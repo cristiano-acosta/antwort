@@ -11,7 +11,6 @@ h2 { font-size:18px; }
 h3 { font-size:16px; }
 h4 { font-size:14px; }
 header, article, footer { position:relative; top:0; left:0; width:100%; float:none ; overflow:hidden;}
-.wow { overflow:hidden; }
 main { position:relative; top:0; left:0; width:100%; float:none; }
 hr { border:none; margin:5px 0; height:4px; border-radius:5px; }
 /* ========================= class ========================= */
