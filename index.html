@@ -1,326 +1,415 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	"http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="initial-scale=1.0">
-	<!-- So that mobile webkit will display zoomed in -->
-	<meta name="format-detection" content="telephone=no">
-	<!-- disable auto telephone linking in iOS -->
-	<title>resume-email - responsive Email Layout</title>
-	<style type="text/css">
-		/* Resets: see reset.css for details */
-		.ReadMsgBody{ width:100%; background-color:#ebebeb; }
-		.ExternalClass{ width:100%; background-color:#ebebeb; }
-		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height:100%; }
-		body{ -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
-		body{ margin:0; padding:0; }
-		table{ border-spacing:0; }
-		table td{ border-collapse:collapse; }
-		.yshortcuts a{ border-bottom:none !important; }
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- SEO -->
+    <title>Cristiano Acosta - Programador, Publicitario, Design, Marketing</title>
+    <meta name="googlebot" content="all,index,archive,follow"/>
+    <meta name="robots" content="all,index,follow" />
+    <meta name="msnbot" content="all,index,follow" />
+    <meta name="rating" content="general"/>
+    <meta name="author" property="og:author" content="Cristiano Acosta - Programador, Publicitario, Design, Marketing" />
+    <meta name="description" property="og:description" content=" " />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content="Cristiano Acosta - Programador, Publicitario, Design, Marketing" />
+    <meta property="og:url" content="http://cristiano-acosta.github.io/resume-email/" />
+    <meta property="og:image" content="img/tile-wide.png" />
+    <meta property="og:site_name" content="Cristiano Acosta - Programador, Publicitario, Design, Marketing" />
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <!-- .CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- .JS -->
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body class="document bg-white" role="document" itemscope itemtype="http://schema.org/Organization" >
+    <!--[if lt IE 8]>
+      <p class="label label-danger browsehappy">
+        Você está usando um navegador desatualizado.<a href="http://browsehappy.com/">Atualize seu navegador hoje</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instalar o Google Chrome Frame</a> para melhor utilizar este site.
+      </p>
+    <![endif]-->
+    <nav id="main-nav" class="navbar navbar-inverse" role="navigation" >
+      <div class="container">
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a itemprop="url" class="navbar-brand" href="http://cristiano-acosta.github.io/resume-email/" >
+            <img itemprop="logo" class="img-responsive" src="img/cristiano.png" alt="Cristiano Acosta - Web Design" />
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+          	<li >
+          		<a itemprop="sameAs" href="http://www.behance.net/cristianoacosta">
+                <i class="fa fa-behance"></i>
+                http://www.behance.net/cristianoacosta
+              </a>
+          	</li>
+          	<li>
+          		<a itemprop="sameAs" href="https://github.com/cristiano-acosta">
+                <i class="fa fa-github"></i>
+                https://github.com/cristiano-acosta
+              </a>
+          	</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          	<li >
+              <a itemprop="telephone" href="tel:+555184683082" onClick="ga('send', 'event', 'Contato', 'click no telefone','telefone + 55 51 8468.3082', '0.5');" >
+                <i class="fa fa-phone"></i>
+                + 55 51 8468.3082
+              </a>
+          	</li>
+          	<li>
+              <a itemprop="email" href="maito:cristiano-acosta@hotmail.com" onClick="ga('send', 'event', 'Contato', 'click no e-mail','cristiano-acosta@hotmail.com', '0.5');" >
+                <i class="fa fa-envelope"></i>
+                cristiano-acosta@hotmail.com
+              </a>
+          	</li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </nav>
+    <header id="header" role="presentation">
+      <div class="container">
+        <article class="row h-entry" role="article">
+          <section itemprop="description" class="e-content col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <p>
+              A vida é comum demais, por isso você vira um publicitário. Mesmo desconfiado de suas intenções, descobre que tem 11 anos de experiência criando soluções de desing gráfico. Na busca por desafios você parte para um novo ramo do conhecimento.
+            </p>
+            <p>
+              A vida muda demais, por isso você vira um programador. De forma autodidata se aventuda em linguagens de programação. Você entra novamente nos trilhos e recomeça a desenhar projetos de web, afinal o objetivo é revolucionar com criações que gerem resultados.
+            </p>
+            <p>
+              Na verdade criar e desenvolver se resumem apenas em dispertar Atenção, Interesse, Desejo e Ação em alguém.
+            </p>
+            <p>
+              Esse é o meu mantra e isso é o que faço da vida.
+            </p>
+          </section>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          <aside class=" col-xs-3 col-sm-3 col-md-3 col-lg-3" role="complementary" >
+            <picture class="u-photo" >
+              <source media="(min-width: 36em)" srcset="img/habilidades.png  1024w,  img/habilidades.png 640w, img/habilidades.png  320w" sizes="33.3vw"/>
+              <source srcset="img/habilidades.png 2x, img/habilidades.png 1x"/>
+              <img class="img-responsive" src="img/habilidades.png"  alt="Habilidades" />
+            </picture>
+          </aside>
+        </article>
+      </div>
+    </header>
+    <main id="main" role="main">
+      <article id="experiencias" class="article bg-black" >
+        <div class="container">
+          <div class="row">
+            <h2 class="col-md-12">
+              <i class="fa fa-line-chart"></i>
+              Experiências Profissionais
+            </h2>
+          </div>
+          <ul class="row row-no-padding list-unstyled list-inline">
+            <img class="col-md-12" src="img/experiencias.png" alt="Experiências Profissionais" />
+            <li class="col-md-2">
+              <h3>Midia On-Line Marketing Digital</h3>
+              <p>
+                <em>Assistente de Arte Web Design</em>
+              </p>
+              <hr class="bg-primary" />
+              <time>2006</time>
+            </li>
+            <li class="col-md-2">
+              <h3>Luiza Pilau
+                Projetos e Eventos</h3>
+              <p>
+                <em>Comunicação e Desenvolvimento</em>
+              </p>
+              <hr class="bg-info" />
+              <time>2007</time>
+            </li>
+            <li class="col-md-2">
+              <h3>Luiza Pilau
+                Projetos e Eventos</h3>
+              <p>
+                <em>Comunicação e Desenvolvimento</em>
+              </p>
+              <hr class="bg-info" />
+              <time>2007</time>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article id="portfolio" class="" >
+        <section class="section-title">
+          <div class="container">
+            <div class="row">
+              <h2 class="col-md-12 text-center">
+                <i class="fa fa-graduation-cap"></i>
+                Portfolio
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section id="carousel" class="carousel slide slide-carousel" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+          </ol>
 
-		/* Constrain email width for small screens */
-		@media screen and (max-width:600px){
-			table[class="container"]{
-				width:95% !important;
-			}
-		}
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/portfolio/3pinheiros.jpg" alt="Image">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img src="img/portfolio/action.jpg" alt="Image">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img src="img/portfolio/alphaquimica.jpg" alt="Image">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img src="img/portfolio/europa.jpg" alt="Image">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img src="img/portfolio/feelhappy.jpg" alt="Image">
+              <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img src="img/portfolio/hctecinformatica.jpg" alt="Image">
+              <div class="carousel-caption"></div>
+            </div>
 
-		/* Give content more room on mobile */
-		@media screen and (max-width:480px){
-			td[class="container-padding"]{
-				padding-left:12px !important;
-				padding-right:12px !important;
-			}
-		}
+          </div>
+          <div class="carousel-controls">
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
-		/* Styles for forcing columns to rows */
-		@media only screen and (max-width:600px){
+        </section>
 
-			/* force container columns to (horizontal) blocks */
-			td[class="force-col"]{
-				display:block;
-				padding-right:0 !important;
-			}
-			table[class="col-3"]{
-				/* unset table align="left/right" */
-				float:none !important;
-				width:100% !important;
+      </article>
+      <article id="educacao" class="article">
+        <section id="formacao" class="container">
+          <div class="row">
+            <h2 class="col-md-12">
+              <i class="fa fa-university"></i>
+              Formação Acadêmica
+            </h2>
+          </div>
+          <div class="row">
+            <div class=" col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="formacao ">
+                <img class="col-md-3" src="img/espm.png" alt="ESPM">
+                <div class="col-md-9">
+                  <h3>ESPM</h3>
+                  <h4>2010/2015 - Bacharel Publicidade e Propaganda</h4>
+                  <p>
+                    <em>Curso com duração de 10 semestres com ênfase na área de criação.</em>
+                  </p>
 
-				/* change left/right padding and margins to top/bottom ones */
-				margin-bottom:12px;
-				padding-bottom:12px;
-				border-bottom:1px solid #eee;
-			}
+                </div>
+              </div>
+            </div>
+            <div class=" col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="formacao ">
+                <img class="col-md-3" src="img/ete-irmao-pedro.png" alt="ETE Irmão Pedro">
+                <div class="col-md-9">
+                  <h3>ETE Irmão Pedro</h3>
+                  <h4>2009/2010 - Técnico Publicidade e Propaganda</h4>
+                  <p>
+                    <em>Ensino Pós-Médio completo em Dez/2003, Curso Técnico em Publicidade e Propaganda</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="certificacoes" class="container">
+          <div class="row">
+            <h2 class="col-md-12">
+              <i class="fa fa-certificate"></i>
+              Certificações
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Target Trust</h3>
+              <h4>Formação Ruby On Rails</h4>
+              <p>Desenvolvimento ágil e rápido na web.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Alfamidia</h3>
+              <h4>Formação Web Design CS4</h4>
+              <p>Carga horária de 40 horas/aulas</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Senai Artes Gráficas</h3>
+              <h4>Formação Corel,Photoshop e Page Mater</h4>
+              <p>Intensivos de 40 horas/aulas cada programa</p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article id="qualificacoes" class="article bg-black" >
+        <div class="container">
+          <div class="row">
+            <section class="col-md-7">
+              <div class="row">
+                <h2 class="col-md-12">
+                  <i class="fa fa-language"></i>
+                  Idiomas
+                </h2>
+              </div>
+              <div class="row">
+                <img class="col-md-6" src="img/spider-chart.png" alt="ESPM">
+                <ul class="col-md-6 list-unstyled ">
+                  <li>
+                    <h3>Portugues</h3>
+                    <p>Nativo</p>
+                  </li>
+                  <li>
+                    <h3>Ingles</h3>
+                    <p>Aulas Particulares</p>
+                    <p>CCAA</p>
+                  </li>
+                  <li>
+                    <h3>Espanhol</h3>
+                    <p>Aulas Particulares</p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="col-md-5">
+              <div class="row">
+                <h2 class="col-md-12">
+                  <i class="fa fa-laptop"></i>
+                  Softwares
+                </h2>
 
-			/* remove bottom border for last column/row */
-			table[id="last-col-3"]{
-				border-bottom:none !important;
-				margin-bottom:0;
-			}
+                <form id="form-softwares" class="col-equalize col-md-8">
+                  <div class="form-group">
+                    <label for="softwares"></label>
+                    <input name="softwares" id="softwares" type="range" data-slider-min="40" data-slider-max="100" data-slider-step="10" data-slider-value="0" step="10" max="100" min="40" value=""  />
+                  </div>
+                </form>
+                <ul class="col-equalize col-md-offset-1 col-md-3 list-unstyled list-softwares">
+                  <li class="corel-draw">Corel Draw</li>
+                  <li class="photoshop"> Photoshop</li>
+                  <li class="illustrator">Illustrator</li>
+                  <li class="indesign">Indesign</li>
+                  <li class="after-effects">After Effects</li>
+                  <li class="phpstorm">PhpStorm</li>
+                </ul>
+              </div>
+              <div class="row">
+                <h2 class="col-md-12">
+                  <i class="fa fa-code"></i>
+                  Linguagens
+                </h2>
+                <ul class="col-equalize col-md-3 list-unstyled list-language ">
+                  <li class="html5">HTML 5</li>
+                  <li class="css3">CSS 3</li>
+                  <li class="javascript">JavaScript</li>
+                  <li class="ruby">Ruby on Raills</li>
+                  <li class="php">PHP</li>
+                </ul>
+                <form id="form-linguagens" class="col-equalize col-md-8 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="linguagens"></label>
+                    <input name="linguagens" id="linguagens" type="range" data-slider-min="40" data-slider-max="100" data-slider-step="10" data-slider-value="0" step="10" max="100" min="40"  />
+                  </div>
+                </form>
 
-			/* align img right and shrink them a bit */
-			img[class="col-3-img"]{
-				float:right;
-				margin-left:6px;
-				max-width:130px;
-			}
-		}
-	</style>
-	<style type="text/css">
-		/* Resets: see reset.css for details */
-		.ReadMsgBody{ width:100%; background-color:#ebebeb; }
-		.ExternalClass{ width:100%; background-color:#ebebeb; }
-		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height:100%; }
-		body{ -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
-		body{ margin:0; padding:0; }
-		table{ border-spacing:0; }
-		table td{ border-collapse:collapse; }
-		.yshortcuts a{ border-bottom:none !important; }
-
-		/* Constrain email width for small screens */
-		@media screen and (max-width:600px){
-			table[class="container"]{
-				width:95% !important;
-			}
-		}
-
-		/* Give content more room on mobile */
-		@media screen and (max-width:480px){
-			td[class="container-padding"]{
-				padding-left:12px !important;
-				padding-right:12px !important;
-			}
-		}
-
-		/* Styles for forcing columns to rows */
-		@media only screen and (max-width:600px){
-
-			/* force container columns to (horizontal) blocks */
-			td[class="force-col"]{
-				display:block;
-				padding-right:0 !important;
-			}
-			table[class="col-2"]{
-				/* unset table align="left/right" */
-				float:none !important;
-				width:100% !important;
-
-				/* change left/right padding and margins to top/bottom ones */
-				margin-bottom:12px;
-				padding-bottom:12px;
-				border-bottom:1px solid #eee;
-			}
-
-			/* remove bottom border for last column/row */
-			table[id="last-col-2"]{
-				border-bottom:none !important;
-				margin-bottom:0;
-			}
-
-			/* align img right and shrink them a bit */
-			img[class="col-2-img"]{
-				float:right;
-				margin-left:6px;
-				max-width:130px;
-			}
-		}
-	</style>
-</head>
-<body style="margin:0; padding:10px 0;" bgcolor="#ebebeb" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<br>
-<!-- 100% wrapper (grey background) -->
-	<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
-		<tr>
-			<td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #ebebeb;">
-				<!-- 600px container (white background) -->
-				<table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
-					<tr id="header">
-						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff;  font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;">
-							<table  border="0" width="100%" cellpadding="0" cellspacing="0" class="container" bgcolor="#000000">
-								<tr>
-									<td class="force-col" style=" padding-left: 30px; padding-right: 30px; height:60px;" valign="top">
-										<!-- ### COLUMN 1 ### -->
-										<h1 style="font-weight: bold; font-size: 25px; line-height: 28px; margin:10px 0 0 0; color: #939393; text-align:center; ">Cristiano Acosta </h1>
-										<h2 style="font-weight: bold; font-size: 16px; line-height: 25px; margin:0 0 10px 0; color: #939393; text-align:center;">Creative Developer</h2>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr id="sobre">
-						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;">
-							<table  border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
-								<tr>
-									<td class="force-col" style="padding-right: 20px;" valign="top">
-										<!-- ### COLUMN 1 ### -->
-										<table border="0" cellspacing="0" cellpadding="0" width="260" align="left" class="col-2">
-											<tr>
-												<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-													<h3 style="font-weight: bold; font-size: 17px; line-height: 17px; color: #D03C0F; text-align:center;">
-														<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"><em>sobre</em></a>
-													</h3>
-													<p>Aquele que é mestre na arte de viver faz pouca distinção entre o seu trabalho e o seu tempo livre, entre a sua mente e o seu corpo, entre a sua educação e a sua recreação, entre o seu amor e a sua religião. Distingue uma coisa da outra com dificuldade.<br> Almeja, simplesmente, a excelência em qualquer coisa que faça, deixando aos demais a tarefa de decidir se está trabalhando ou se divertindo.<br> Ele acredita que está sempre fazendo as duas coisas ao mesmo tempo.</p>
-
-
-												</td>
-											</tr>
-										</table>
-									</td>
-									<td class="force-col" valign="top">
-										<!-- ### COLUMN 2 ### -->
-										<table border="0" cellspacing="0" cellpadding="0" width="260" align="right" class="col-2" id="last-col-2">
-											<tr>
-												<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-													<h3 style="font-weight: bold; font-size: 17px; line-height: 17px; color: #D03C0F; text-align:center;">
-														<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"><em>habilidades</em> </a>
-													</h3>
-													<br>
-													<img src="http://cristiano-acosta.github.com/resume-email/img/habilidades.png" alt="Habilidades" class="col-2-img" style="vertical-align:top; padding-bottom:12px; width:100%; " border="0" hspace="0" vspace="0">
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr id="Experiencias">
-						<td class="container-padding" bgcolor="#333333" style="background-color: #333333; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;" >
-							<table  border="0" width="100%" cellpadding="0" cellspacing="0" class="container" bgcolor="#333333">
-								<tr>
-									<td class="container-padding" bgcolor="#333333" style="background-color: #333333; font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;" align="left">
-										<h3 style="font-weight: bold; font-size: 17px; line-height: 17px; color: #D03C0F; text-align:center;">
-											<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"><em>experiências</em> </a>
-										</h3>
-										<img src="http://cristiano-acosta.github.com/resume-email/img/experiencias.png" alt="Experiencias" class="col-2-img" style="vertical-align:top; padding-bottom:12px; width:100%;" border="0" hspace="0" vspace="0">
-
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr id="Portfolio">
-						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;" >
-							<table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
-								<tr>
-									<td align="center" valign="middle" bgcolor="#ffffff" class="container-padding" style="background-color: #ffffff;  font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;">
-										<h3 style="font-weight: bold; font-size: 16px; line-height: 16px; color: #D03C0F;">
-											<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"> <em>portfolio</em> </a>
-										</h3>
-										<table border="0" cellpadding="0" cellspacing="0" class="columns-container">
-											<tr>
-												<td class="force-col" style="padding-right: 20px;" valign="top">
-													<!-- ### COLUMN 1 ### -->
-													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
-														<tr>
-															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-																<a href="http://casalindars.com.br" style="color:#2469A0; font-weight:bold">
-																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/casalindars.png" alt="Casa Linda RS" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
-																	<p>Casa Linda RS</p>
-																</a>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="force-col" style="padding-right: 20px;" valign="top">
-													<!-- ### COLUMN 2 ### -->
-													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
-														<tr>
-															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-																<a href="http://cafedelamusiquepoa.com.br" style="color:#2469A0; font-weight:bold">
-																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/cafedelamusiquepoa.png" alt="Cafe de la Musique" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
-																	<p>Cafe de la Musique</p>
-																</a>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="force-col" valign="top">
-													<!-- ### COLUMN 3 ### -->
-													<table border="0" cellspacing="0" cellpadding="0" width="175" align="right" class="col-3" id="last-col-3">
-														<tr>
-															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-																<a href="http://acertcon.com.br/aracertconfaq/" style="color:#2469A0; font-weight:bold">
-																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/aracertconfaq.png" alt="AR Acertcon FAQ" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
-																	<p>AR Acertcon FAQ</p>
-																</a>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-											<tr>
-												<td class="force-col" style="padding-right: 20px;" valign="top">
-													<!-- ### COLUMN 1 ### -->
-													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
-														<tr>
-															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-																<a href="http://clovisfreitas.com.br/" style="color:#2469A0; font-weight:bold">
-																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/clovisfreitas.png" alt="Clovis Freitas" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
-																	<p>Clovis Freitas</p>
-																</a>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="force-col" style="padding-right: 20px;" valign="top">
-													<!-- ### COLUMN 2 ### -->
-													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
-														<tr>
-															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-																<a href="http://www.designpratodos.com.br/" style="color:#2469A0; font-weight:bold">
-																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/designpratodos.png" alt="Design Pra Todos" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
-																	<p>Design Pra Todos</p>
-																</a>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="force-col" valign="top">
-													<!-- ### COLUMN 3 ### -->
-													<table border="0" cellspacing="0" cellpadding="0" width="175" align="right" class="col-3" id="last-col-3">
-														<tr>
-															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
-																<a href="http://leoncastello.com.br/" style="color:#2469A0; font-weight:bold">
-																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/leoncastello.png" alt="Leon Castello Agência" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
-																	<p>Leon Castello Agência</p>
-																</a>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr id="footer">
-						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff;  font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;">
-							<table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" class="container" bgcolor="#000000">
-								<tr>
-									<td class="force-col" style=" padding-left: 30px; padding-right: 30px; height:60px;" valign="top">
-										<img src="http://cristiano-acosta.github.com/resume-email/img/brand.png" alt="Cristiano Acosta" border="0" hspace="0" vspace="0" style="vertical-align:middle; width:100%;"  >
-									</td>
-									<td class="force-col" style=" padding-left: 30px; padding-right: 30px; height:60px;" valign="top">
-										<p style="margin:25px 0 25px 0; font-size:12px; line-height:18px; text-align:right; ">
-											Portfólio: http://www.behance.net/cristianoacosta<br/>
-											Git e OpenSource Projects: https://github.com/cristiano-acosta<br/>
-											E-mail: cristiano-acosta@hotmail.com<br/>
-											Telefone: +55 51 8468 3082<br/>
-										</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
 
 
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
-	</table>
-			<!--/100% wrapper--><br> <br>
-</body>
+    </main>
+    <footer id="footer" class="article">
+      <div class="container">
+        <div class="row">
+          <ul class="col-xs-6 col-sm-3 col-md-3 list-unstyled  " >
+            <li class="fn" itemprop="name">
+              <h2 class="hidden">Cristiano Acosta</h2>
+            </li>
+            <li>
+              <address class="" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <p class="street-address" itemprop="streetAddress">
+
+                  <span class="region">
+                      Mont’ Searrat
+                  </span>
+                </p>
+                <p class="locality" itemprop="addressLocality">
+                  Alvorada
+                </p>
+                <p>
+                  <abbr itemprop="addressRegion" class="state" title="Rio Grande do Sul">RS</abbr>,
+                </p>
+              </address>
+            </li>
+            <li class="tel text-right text-danger">
+              <a itemprop="telephone" href="tel:+55145130844444" onClick="ga('send', 'event', 'Contato', 'click no telefone','telefone +55 51 3084.4444', '0.5');" >51 3084.4444</a>
+            </li>
+            <li class="tel text-right text-danger">
+              <a itemprop="telephone" href="tel:+55145130844444" onClick="ga('send', 'event', 'Contato', 'click no telefone','telefone +55 51 3084.4444', '0.5');" >51 3084.4444</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--<script src="js/plugins.js"></script>-->
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66124219-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
 </html>
-

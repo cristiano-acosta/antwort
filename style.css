@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Cristiano Acosta
+   ========================================================================== */
+/* ========================= tags ========================= */
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,400italic,600,600italic);
+body { font-family: 'PT Sans', sans-serif;  }
+h1, h2, h3, h4, h5, h6  { font-family: 'Cabin', sans-serif; text-transform:uppercase;  }
+header, article, footer { position:relative; top:0; left:0; width:100%; float:none; }
+main { position:relative; top:0; left:0; width:100%; float:none; }
+
+/* ========================= class ========================= */
+.bg-black {  background-image: -moz-linear-gradient( 90deg, rgb(8,8,8) 0%, rgb(8,8,8) 50%, rgb(8,8,8) 50%, rgb(8,8,8) 53%); background-image: -webkit-linear-gradient( 90deg, rgb(8,8,8) 0%, rgb(8,8,8) 50%, rgb(8,8,8) 50%, rgb(8,8,8) 53%);  background-image: -ms-linear-gradient( 90deg, rgb(8,8,8) 0%, rgb(8,8,8) 50%, rgb(8,8,8) 50%, rgb(8,8,8) 53%); }
+.bg-black * { color:#ffffff;  }
+.bg-white { background-color: rgb(255, 255, 255) ; }
+.section-title {background: rgb(0, 0, 0); background: transparent; background: rgba(0, 0, 0, 0.8);/* FF3+,Saf3+,Opera 10.10+,Chrome,IE9*/ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);/*IE 5.5-7*/ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000)";/*IE8*/ zoom: 1; position:absolute; top:0; left:0; z-index:9999; height:70px; width:100%; }
+.section-title * { color:#ffffff  }
+.formacao { border-style: solid; border-width: 1px; border-color: rgb(224, 224, 224); border-radius: 10px; background-color: rgb(248, 248, 248); height: 150px; }
+.article { padding:150px 0 150px 0; }
+.col-equalize { height:120px; margin:0; }
+.form-group { margin:0; }
+.row-no-padding   { margin:0;}
+.row-no-padding div[class^='col-'],.row-no-padding div[class*='col-'] { padding:0; }
+/* Colors */
+.bg-darkorange { background:#ff9601; }
+.bg-cyan { background:#57c5f8; }
+.bg-orangered { background:#dc3c03; }
+.bg-teal { background:#47878a; }
+.bg-grean { background:#8fb42e; }
+
+.darkorange { color:#ff9601; }
+.cyan { color:#57c5f8; }
+.orangered { color:#dc3c03; }
+.teal { color:#47878a; }
+.grean { color:#8fb42e; }
+
+/* ========================= layout ========================= */
+nav#main-nav { background:#000000; height: 150px; margin:0; padding:0;  }
+/* header */
+header#header { padding:150px 0 150px 0; }
+/* experiencias */
+#experiencias { }
+#experiencias time { }
+/* qualificacoes */
+#form-softwares {  }
+#form-softwares .slider.slider-horizontal { width: 100%;}
+#form-softwares .slider-selection, #form-linguagens .slider-selection  { background: rgb(255, 255, 255); background: transparent; background: rgba(255, 255, 255, 0.2);/* FF3+,Saf3+,Opera 10.10+,Chrome,IE9*/ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);/*IE 5.5-7*/   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF)";/*IE8*/   zoom: 1; }
+#form-softwares .slider-track { background:#8fb42e; height:5px; }
+#form-softwares .slider-handle { background:#ffffff; width:12px; height:12px; }
+#form-linguagens {  }
+#form-linguagens .slider.slider-horizontal { width: 100%;}
+#form-linguagens .slider-track { background:#47878a; height:5px; }
+#form-linguagens .slider-handle { background:#ffffff; width:12px; height:12px; }

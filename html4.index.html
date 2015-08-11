@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<!-- So that mobile webkit will display zoomed in -->
+	<meta name="format-detection" content="telephone=no">
+	<!-- disable auto telephone linking in iOS -->
+	<title>resume-email - responsive Email Layout</title>
+	<style type="text/css">
+		/* Resets: see reset.css for details */
+		.ReadMsgBody{ width:100%; background-color:#ebebeb; }
+		.ExternalClass{ width:100%; background-color:#ebebeb; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height:100%; }
+		body{ -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+		body{ margin:0; padding:0; }
+		table{ border-spacing:0; }
+		table td{ border-collapse:collapse; }
+		.yshortcuts a{ border-bottom:none !important; }
+
+		/* Constrain email width for small screens */
+		@media screen and (max-width:600px){
+			table[class="container"]{
+				width:95% !important;
+			}
+		}
+
+		/* Give content more room on mobile */
+		@media screen and (max-width:480px){
+			td[class="container-padding"]{
+				padding-left:12px !important;
+				padding-right:12px !important;
+			}
+		}
+
+		/* Styles for forcing columns to rows */
+		@media only screen and (max-width:600px){
+
+			/* force container columns to (horizontal) blocks */
+			td[class="force-col"]{
+				display:block;
+				padding-right:0 !important;
+			}
+			table[class="col-3"]{
+				/* unset table align="left/right" */
+				float:none !important;
+				width:100% !important;
+
+				/* change left/right padding and margins to top/bottom ones */
+				margin-bottom:12px;
+				padding-bottom:12px;
+				border-bottom:1px solid #eee;
+			}
+
+			/* remove bottom border for last column/row */
+			table[id="last-col-3"]{
+				border-bottom:none !important;
+				margin-bottom:0;
+			}
+
+			/* align img right and shrink them a bit */
+			img[class="col-3-img"]{
+				float:right;
+				margin-left:6px;
+				max-width:130px;
+			}
+		}
+	</style>
+	<style type="text/css">
+		/* Resets: see reset.css for details */
+		.ReadMsgBody{ width:100%; background-color:#ebebeb; }
+		.ExternalClass{ width:100%; background-color:#ebebeb; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height:100%; }
+		body{ -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+		body{ margin:0; padding:0; }
+		table{ border-spacing:0; }
+		table td{ border-collapse:collapse; }
+		.yshortcuts a{ border-bottom:none !important; }
+
+		/* Constrain email width for small screens */
+		@media screen and (max-width:600px){
+			table[class="container"]{
+				width:95% !important;
+			}
+		}
+
+		/* Give content more room on mobile */
+		@media screen and (max-width:480px){
+			td[class="container-padding"]{
+				padding-left:12px !important;
+				padding-right:12px !important;
+			}
+		}
+
+		/* Styles for forcing columns to rows */
+		@media only screen and (max-width:600px){
+
+			/* force container columns to (horizontal) blocks */
+			td[class="force-col"]{
+				display:block;
+				padding-right:0 !important;
+			}
+			table[class="col-2"]{
+				/* unset table align="left/right" */
+				float:none !important;
+				width:100% !important;
+
+				/* change left/right padding and margins to top/bottom ones */
+				margin-bottom:12px;
+				padding-bottom:12px;
+				border-bottom:1px solid #eee;
+			}
+
+			/* remove bottom border for last column/row */
+			table[id="last-col-2"]{
+				border-bottom:none !important;
+				margin-bottom:0;
+			}
+
+			/* align img right and shrink them a bit */
+			img[class="col-2-img"]{
+				float:right;
+				margin-left:6px;
+				max-width:130px;
+			}
+		}
+	</style>
+</head>
+<body style="margin:0; padding:10px 0;" bgcolor="#ebebeb" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<br>
+<!-- 100% wrapper (grey background) -->
+	<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+		<tr>
+			<td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #ebebeb;">
+				<!-- 600px container (white background) -->
+				<table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
+					<tr id="header">
+						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff;  font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;">
+							<table  border="0" width="100%" cellpadding="0" cellspacing="0" class="container" bgcolor="#000000">
+								<tr>
+									<td class="force-col" style=" padding-left: 30px; padding-right: 30px; height:60px;" valign="top">
+										<!-- ### COLUMN 1 ### -->
+										<h1 style="font-weight: bold; font-size: 25px; line-height: 28px; margin:10px 0 0 0; color: #939393; text-align:center; ">Cristiano Acosta </h1>
+										<h2 style="font-weight: bold; font-size: 16px; line-height: 25px; margin:0 0 10px 0; color: #939393; text-align:center;">Creative Developer</h2>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr id="sobre">
+						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;">
+							<table  border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
+								<tr>
+									<td class="force-col" style="padding-right: 20px;" valign="top">
+										<!-- ### COLUMN 1 ### -->
+										<table border="0" cellspacing="0" cellpadding="0" width="260" align="left" class="col-2">
+											<tr>
+												<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+													<h3 style="font-weight: bold; font-size: 17px; line-height: 17px; color: #D03C0F; text-align:center;">
+														<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"><em>sobre</em></a>
+													</h3>
+													<p></p>
+
+
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="force-col" valign="top">
+										<!-- ### COLUMN 2 ### -->
+										<table border="0" cellspacing="0" cellpadding="0" width="260" align="right" class="col-2" id="last-col-2">
+											<tr>
+												<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+													<h3 style="font-weight: bold; font-size: 17px; line-height: 17px; color: #D03C0F; text-align:center;">
+														<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"><em>habilidades</em> </a>
+													</h3>
+													<br>
+													<img src="http://cristiano-acosta.github.com/resume-email/img/habilidades.png" alt="Habilidades" class="col-2-img" style="vertical-align:top; padding-bottom:12px; width:100%; " border="0" hspace="0" vspace="0">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr id="Experiencias">
+						<td class="container-padding" bgcolor="#333333" style="background-color: #333333; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;" >
+							<table  border="0" width="100%" cellpadding="0" cellspacing="0" class="container" bgcolor="#333333">
+								<tr>
+									<td class="container-padding" bgcolor="#333333" style="background-color: #333333; font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;" align="left">
+										<h3 style="font-weight: bold; font-size: 17px; line-height: 17px; color: #D03C0F; text-align:center;">
+											<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"><em>experiências</em> </a>
+										</h3>
+										<img src="http://cristiano-acosta.github.com/resume-email/img/experiencias.png" alt="Experiencias" class="col-2-img" style="vertical-align:top; padding-bottom:12px; width:100%;" border="0" hspace="0" vspace="0">
+
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr id="Portfolio">
+						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;" >
+							<table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff">
+								<tr>
+									<td align="center" valign="middle" bgcolor="#ffffff" class="container-padding" style="background-color: #ffffff;  font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;">
+										<h3 style="font-weight: bold; font-size: 16px; line-height: 16px; color: #D03C0F;">
+											<a href="#" style="color:#2469A0; font-weight:bold; text-decoration:none; outline:none;"> <em>portfolio</em> </a>
+										</h3>
+										<table border="0" cellpadding="0" cellspacing="0" class="columns-container">
+											<tr>
+												<td class="force-col" style="padding-right: 20px;" valign="top">
+													<!-- ### COLUMN 1 ### -->
+													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+														<tr>
+															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+																<a href="http://casalindars.com.br" style="color:#2469A0; font-weight:bold">
+																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/casalindars.png" alt="Casa Linda RS" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+																	<p>Casa Linda RS</p>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="force-col" style="padding-right: 20px;" valign="top">
+													<!-- ### COLUMN 2 ### -->
+													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+														<tr>
+															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+																<a href="http://cafedelamusiquepoa.com.br" style="color:#2469A0; font-weight:bold">
+																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/cafedelamusiquepoa.png" alt="Cafe de la Musique" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+																	<p>Cafe de la Musique</p>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="force-col" valign="top">
+													<!-- ### COLUMN 3 ### -->
+													<table border="0" cellspacing="0" cellpadding="0" width="175" align="right" class="col-3" id="last-col-3">
+														<tr>
+															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+																<a href="http://acertcon.com.br/aracertconfaq/" style="color:#2469A0; font-weight:bold">
+																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/aracertconfaq.png" alt="AR Acertcon FAQ" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+																	<p>AR Acertcon FAQ</p>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="force-col" style="padding-right: 20px;" valign="top">
+													<!-- ### COLUMN 1 ### -->
+													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+														<tr>
+															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+																<a href="http://clovisfreitas.com.br/" style="color:#2469A0; font-weight:bold">
+																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/clovisfreitas.png" alt="Clovis Freitas" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+																	<p>Clovis Freitas</p>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="force-col" style="padding-right: 20px;" valign="top">
+													<!-- ### COLUMN 2 ### -->
+													<table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+														<tr>
+															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+																<a href="http://www.designpratodos.com.br/" style="color:#2469A0; font-weight:bold">
+																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/designpratodos.png" alt="Design Pra Todos" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+																	<p>Design Pra Todos</p>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="force-col" valign="top">
+													<!-- ### COLUMN 3 ### -->
+													<table border="0" cellspacing="0" cellpadding="0" width="175" align="right" class="col-3" id="last-col-3">
+														<tr>
+															<td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+																<a href="http://leoncastello.com.br/" style="color:#2469A0; font-weight:bold">
+																	<img src="http://cristiano-acosta.github.com/resume-email/img/portfolio/leoncastello.png" alt="Leon Castello Agência" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+																	<p>Leon Castello Agência</p>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr id="footer">
+						<td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff;  font-size: 14px; line-height: 20px; font-family: Helvetica, sans-serif; color: #A09D9D;">
+							<table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" class="container" bgcolor="#000000">
+								<tr>
+									<td class="force-col" style=" padding-left: 30px; padding-right: 30px; height:60px;" valign="top">
+										<img src="http://cristiano-acosta.github.com/resume-email/img/brand.png" alt="Cristiano Acosta" border="0" hspace="0" vspace="0" style="vertical-align:middle; width:100%;"  >
+									</td>
+									<td class="force-col" style=" padding-left: 30px; padding-right: 30px; height:60px;" valign="top">
+										<p style="margin:25px 0 25px 0; font-size:12px; line-height:18px; text-align:right; ">
+											Portfólio: http://www.behance.net/cristianoacosta<br/>
+											Git e OpenSource Projects: https://github.com/cristiano-acosta<br/>
+											E-mail: cristiano-acosta@hotmail.com<br/>
+											Telefone: +55 51 8468 3082<br/>
+										</p>
+
+
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+	</table>
+			<!--/100% wrapper--><br> <br>
+</body>
+</html>
+
