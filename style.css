@@ -19,7 +19,7 @@ hr { border:none; margin:5px 0; height:4px; border-radius:5px; }
 .bg-white { background-color: rgb(255, 255, 255) ; }
 .section-title {background: rgb(0, 0, 0); background: transparent; background: rgba(0, 0, 0, 0.8);/* FF3+,Saf3+,Opera 10.10+,Chrome,IE9gtwq\*/ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000);/*IE 5.5-7*/ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000,endColorstr=#cc000000)";/*IE8*/ zoom: 1; position:absolute; top:0; left:0; z-index:9999; height:70px; width:100%; }
 .section-title * { color:#ffffff  }
-.formacao { border-style: solid; border-width: 1px; border-color: rgb(224, 224, 224); border-radius: 10px; background-color: rgb(248, 248, 248); height: 150px; }
+.formacao { border-style: solid; border-width: 1px; border-color: rgb(224, 224, 224); border-radius: 10px; background-color: rgb(248, 248, 248); /*height: 150px;*/ }
 .article { padding:150px 0 150px 0; }
 .col-equalize { height:120px; margin:0; }
 .form-group { margin:0; }
