@@ -70,3 +70,48 @@ footer#footer { background:url("img/footer.jpg") no-repeat fixed; color:#ffffff;
 footer#footer p { margin:0; }
 footer#footer a {  color:#ffffff; display:block; }
 footer#footer li {   color:#ffffff; }
+/* ==========================================================================
+   4.1 EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .formacao { height:auto; }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width:321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width:320px) {
+  .row-footer { margin-top:60%; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1020px) {
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+}
+@media (min-width: 1200px) {
+  .container { width: 1170px; }
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+}
