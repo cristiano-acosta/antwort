@@ -45,7 +45,7 @@ header#header { padding:150px 0 150px 0; }
 /* experiencias */
 #experiencias { }
 #experiencias ul { padding:30px 0;  }
-#experiencias li { }
+#experiencias li {   }
 #experiencias h3 { font-size:14px; margin:0 0 5px 0; line-height:1;  }
 #experiencias p { font-size:12px; margin:0 0 5px 0; line-height:1.2; min-height:30px; }
 #experiencias p em {  display:block;}
@@ -77,9 +77,9 @@ footer#footer li {   color:#ffffff; }
    ========================================================================== */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .formacao { height:auto; }
+  .formacao { }
+  #experiencias li { display: block; height: 130px;  }
 }
-
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width:321px) {
 
