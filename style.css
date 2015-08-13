@@ -47,7 +47,7 @@ header#header { padding:150px 0 150px 0; }
 #experiencias ul { padding:30px 0;  }
 #experiencias li {   }
 #experiencias h3 { font-size:14px; margin:0 0 5px 0; line-height:1;  }
-#experiencias p { font-size:12px; margin:0 0 5px 0; line-height:1.2; min-height:30px; }
+#experiencias p { font-size:12px; margin:0 0 5px 0; line-height:1.2; min-height:43px; }
 #experiencias p em {  display:block;}
 #experiencias time { color:#6b6a6a; position:relative; text-align:left; border-bottom:3px solid #151515; display:block; width:100%; height:20px; line-height:20px; }
 #experiencias time span { color:#6b6a6a; text-align:left; position:absolute; left:0; padding:0; top:9px; }
