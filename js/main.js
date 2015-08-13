@@ -172,6 +172,31 @@ jQuery(document).ready(function ($) {
       $('li.phpstorm').removeClass('grean');
     }
   }).data('slider');
+  $('ul.list-softwares li').removeClass('grean').each(function(){
+    $(this).click(function() {
+      console.log($(this).data());
+      /*$('input[type="range"]#linguagens').slider({
+       value:$(this).data('skill'), focus:true
+       });*/
+      if($(this).data('skill') > 50) {
+        $(this).addClass('grean');
+      }
+      if($(this).data('skill') > 60) {
+        $(this).addClass('grean');
+      }
+      if($(this).data('skill') > 70) {
+        $(this).addClass('grean');
+      }
+      if($(this).data('skill') > 80) {
+        $(this).addClass('grean');
+      }
+      if($(this).data('skill') > 90) {
+        $(this).addClass('grean');
+      }
+      $('input[type="range"]#softwares').slider('setValue', $(this).data('skill'));
+    });
+  });
+
   $('input[type="range"]#linguagens').slider({
     min:$(this).attr('min'),
     max:$(this).attr('max'),
@@ -234,6 +259,32 @@ jQuery(document).ready(function ($) {
       $('li.php').removeClass('teal');
     }
   }).data('slider');
+
+
+  $('ul.list-language li').each(function(){
+    $(this).removeClass('teal').click(function() {
+      console.log($(this).data());
+      /*$('input[type="range"]#linguagens').slider({
+        value:$(this).data('skill'), focus:true
+      });*/
+      if($(this).data('skill') > 50) {
+        $(this).addClass('teal');
+      }
+      if($(this).data('skill') > 60) {
+        $(this).addClass('teal');
+      }
+      if($(this).data('skill') > 70) {
+        $(this).addClass('teal');
+      }
+      if($(this).data('skill') > 80) {
+        $(this).addClass('teal');
+      }
+      if($(this).data('skill') > 90) {
+        $(this).addClass('teal');
+      }
+      $('input[type="range"]#linguagens').slider('setValue', $(this).data('skill'));
+    });
+  });
 
 
 
