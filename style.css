@@ -70,7 +70,7 @@ header#header { padding:150px 0 150px 0; }
 .col-equalize li { cursor:pointer; }
 /* tabela-preco */
 /* footer */
-footer#footer { background:url("img/footer.jpg") no-repeat fixed; color:#ffffff; }
+footer#footer { background:url("img/footer.jpg") no-repeat fixed; background-size:contain; color:#ffffff; }
 footer#footer p { margin:0; }
 footer#footer a {  color:#ffffff; display:block; }
 footer#footer li {   color:#ffffff; }
@@ -83,6 +83,7 @@ footer#footer li {   color:#ffffff; }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .formacao { margin:0; }
   #experiencias li { display: block; height: 130px;  }
+  .fa { width:60px; height:60px; }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width:321px) {
