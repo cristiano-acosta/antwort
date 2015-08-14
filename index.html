@@ -33,13 +33,13 @@
     <!-- .JS -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
-  <body class="document bg-white" role="document" itemscope itemtype="http://schema.org/Person" >
+  <body class="document bg-white" data-spy="scroll" data-target=".main-nav" data-offset="50" role="document" itemscope itemtype="http://schema.org/Person" >
     <!--[if lt IE 8]>
       <p class="label label-danger browsehappy">
         Você está usando um navegador desatualizado.<a href="http://browsehappy.com/">Atualize seu navegador hoje</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instalar o Google Chrome Frame</a> para melhor utilizar este site.
       </p>
     <![endif]-->
-    <nav id="main-nav" class="navbar navbar-inverse" role="navigation" >
+    <header id="header" class="navbar navbar-inverse"  >
       <div class="container">
         <div class="navbar-header" >
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -54,54 +54,115 @@
           </a>
           <ul class="nav navbar-nav navbar-left">
             <li >
-              <a rel="author" itemprop="sameAs" href="http://www.behance.net/cristianoacosta" data-toggle="tooltip" data-placement="bottom" title="http://www.behance.net/cristianoacosta">
+              <a rel="author" itemprop="sameAs" target="_blank" href="http://www.behance.net/cristianoacosta" data-toggle="tooltip" data-placement="bottom" title="http://www.behance.net/cristianoacosta">
                 <i class="fa fa-behance"></i>
               </a>
             </li>
             <li>
-              <a rel="me" itemprop="sameAs" href="https://github.com/cristiano-acosta" data-toggle="tooltip" data-placement="bottom" title="https://github.com/cristiano-acosta">
+              <a rel="me" itemprop="sameAs" target="_blank" href="https://github.com/cristiano-acosta" data-toggle="tooltip" data-placement="bottom" title="https://github.com/cristiano-acosta">
                 <i class="fa fa-github"></i>
               </a>
             </li>
             <li>
-              <a rel="me" itemprop="sameAs" href="https://www.facebook.com/cristiano.m.acosta" data-toggle="tooltip" data-placement="bottom" title="https://www.facebook.com/cristiano.m.acosta">
+              <a rel="me" itemprop="sameAs" target="_blank" href="https://www.facebook.com/cristiano.m.acosta" data-toggle="tooltip" data-placement="bottom" title="https://www.facebook.com/cristiano.m.acosta">
                 <i class="fa fa-facebook-official"></i>
               </a>
             </li>
             <li>
-              <a rel="me" itemprop="sameAs" href="https://br.linkedin.com/in/cristianoacosta"  data-toggle="tooltip" data-placement="bottom" title="https://br.linkedin.com/in/cristianoacosta">
+              <a rel="me" itemprop="sameAs" target="_blank" href="https://br.linkedin.com/in/cristianoacosta"  data-toggle="tooltip" data-placement="bottom" title="https://br.linkedin.com/in/cristianoacosta">
                 <i class="fa fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a rel="author" itemprop="sameAs" href="https://plus.google.com/u/0/103407360789788292590"   data-toggle="tooltip" data-placement="bottom" title="https://plus.google.com/u/0/103407360789788292590">
+              <a rel="author" itemprop="sameAs" target="_blank" href="https://plus.google.com/u/0/103407360789788292590"   data-toggle="tooltip" data-placement="bottom" title="https://plus.google.com/u/0/103407360789788292590">
                 <i class="fa fa-google-plus"></i>
               </a>
             </li>
-
           </ul>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li >
+            <a itemprop="telephone" href="tel:+555184683082" onClick="ga('send', 'event', 'Contato', 'click no telefone','telefone + 55 51 8468.3082', '0.5');" >
+              <i class="fa fa-phone"></i>
+              + 55 51 8468.3082
+            </a>
+          </li>
+          <li>
+            <a itemprop="email" href="maito:cristiano-acosta@hotmail.com" onClick="ga('send', 'event', 'Contato', 'click no e-mail','cristiano-acosta@hotmail.com', '0.5');" >
+              <i class="fa fa-envelope"></i>
+              cristiano-acosta@hotmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-          <ul class="nav navbar-nav navbar-right">
+    <nav id="main-nav" class="navbar main-nav navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://cristiano-acosta.github.io/resume-email/" >
+            <img class="img-responsive" src="img/cristiano-icon.png" alt="Cristiano Acosta - Web Design" />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active" >
+              <a class="" href="#home"   >
+                Home
+              </a>
+            </li>
             <li >
-              <a itemprop="telephone" href="tel:+555184683082" onClick="ga('send', 'event', 'Contato', 'click no telefone','telefone + 55 51 8468.3082', '0.5');" >
-                <i class="fa fa-phone"></i>
-                + 55 51 8468.3082
+              <a class="" href="#experiencias"   >
+                <i class="fa fa-line-chart"></i>
+                Experiências
               </a>
             </li>
-            <li>
-              <a itemprop="email" href="maito:cristiano-acosta@hotmail.com" onClick="ga('send', 'event', 'Contato', 'click no e-mail','cristiano-acosta@hotmail.com', '0.5');" >
-                <i class="fa fa-envelope"></i>
-                cristiano-acosta@hotmail.com
+            <li >
+              <a class="" href="#portfolio"   >
+                <i class="fa fa-graduation-cap"></i>
+                Portfolio
               </a>
             </li>
+            <li >
+              <a class="" href="#formacao"   >
+                <i class="fa fa-university"></i>
+                Formação Acadêmica
+              </a>
+            </li>
+            <li >
+              <a class="" href="#certificacoes"   >
+                <i class="fa fa-certificate"></i>
+                Certificações
+              </a>
+            </li>
+            <li >
+              <a class="" href="#idiomas"   >
+                <i class="fa fa-language"></i>
+                Idiomas
+              </a>
+            </li>
+            <li >
+              <a class="" href="#habilidades"   >
+                <i class="fa fa-bar-chart"></i>
+                Habilidades
+              </a>
+            </li>
+
           </ul>
-        </div>
-        <!--/.navbar-collapse -->
+        </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-    <header id="header" role="presentation">
+    <section id="home" role="presentation">
       <div class="container">
         <article class="row h-entry" role="article">
           <section itemprop="description" class="e-content   col-md-8 ">
@@ -128,7 +189,7 @@
           </aside>
         </article>
       </div>
-    </header>
+    </section>
     <main id="main" role="main">
       <article id="experiencias" class="article bg-black"  >
         <div class="container " >
@@ -366,7 +427,7 @@
       <article id="qualificacoes" class="article bg-black" >
         <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
           <div class="row">
-            <section class=" col-md-8">
+            <section id="idiomas" class=" col-md-8">
               <div class="row">
                 <h2 class="col-md-12 text-uppercase">
                   <i class="fa fa-language"></i>
@@ -391,7 +452,7 @@
                 </ul>
               </div>
             </section>
-            <section class=" col-md-4">
+            <section id="habilidades" class=" col-md-4">
               <div class="row">
                 <h2 class="col-md-12 text-uppercase">
                   <i class="fa fa-laptop"></i>

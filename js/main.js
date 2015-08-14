@@ -10,6 +10,20 @@ wow = new WOW(
 wow.init();
 jQuery(document).ready(function ($) {
 
+  /** fixar menu */
+  $(window).scroll(function () {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ){
+      //$('#main-nav').css( 'position', 'relative' );
+      $('#main-nav').css( 'display', 'block' );
+    } else {
+      //$('#page_wrapper_full').css( 'position', 'fixed' );
+      $('#main-nav').css( 'display', 'block' );
+      if ($(window).scrollTop() == 0) {
+        //$('#page_wrapper_full').css( 'position', 'relative' );
+        $('#main-nav').css( 'display', 'none' );
+      }
+    }
+  });
   /** Placehold = http://www.caindev.com/blog/2013/02/16/html5-placeholder-fallback-crappy-old-browsers/ */
   // If placeholder isn't supported.
   if (!Modernizr.input.placeholder) {
@@ -103,6 +117,19 @@ jQuery(document).ready(function ($) {
       }
     });
   });*/
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
   $('input[type="range"]#softwares').slider({
     min:$(this).attr('min'),
     max:$(this).attr('max'),
