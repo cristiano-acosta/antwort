@@ -163,36 +163,36 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-    <section id="home" role="presentation">
-      <div class="container">
-        <article class="row h-entry" role="article">
-          <section itemprop="description" class="e-content   col-md-8 ">
-            <p>
-              A vida é comum demais, por isso você se torna um publicitário. Mesmo em dúvida de suas intenções, descobre que tem 11 anos de experiência criando soluções de design gráfico. Na busca por desafios você parte para um novo ramo de conhecimento.
-            </p>
-            <p>
-              A vida muda demais por isso você se torna um programador. De forma autodidata, se aventura em linguagens de programação. Você entra novamente nos trilhos e recomeça a desenhar projetos na web, afinal o objetivo é revolucionar com criações que agregam valor é que geram resultados.
-            </p>
-            <p>
-              Na verdade, criar e desenvolver se resumem apenas em despertar - Atenção, Interesse, Desejo e Ação na vida.
-            </p>
-            <p>
-              Esse é o meu mantra e isso é o que faço da vida.
-            </p>
-          </section>
-          <div class="   col-md-1 "></div>
-          <aside class="    col-md-3  " role="complementary" >
-            <picture class="u-photo" >
-              <source media="(min-width: 36em)" srcset="img/habilidades.png  1024w,  img/habilidades.png 640w, img/habilidades.png  320w" sizes="33.3vw"/>
-              <source srcset="img/habilidades.png 2x, img/habilidades.png 1x"/>
-              <img class="img-responsive" src="img/habilidades.png"  alt="Habilidades" />
-            </picture>
-          </aside>
-        </article>
-      </div>
-    </section>
-    <main id="main" role="main">
-      <article id="experiencias" class="article bg-black"  >
+    <article id="main" class="h-entry" role="article">
+      <section id="home" role="presentation">
+        <div class="container">
+          <div class="row ">
+            <section itemprop="description" class="col-md-8 ">
+              <p>
+                A vida é comum demais, por isso você se torna um publicitário. Mesmo em dúvida de suas intenções, descobre que tem 11 anos de experiência criando soluções de design gráfico. Na busca por desafios você parte para um novo ramo de conhecimento.
+              </p>
+              <p>
+                A vida muda demais por isso você se torna um programador. De forma autodidata, se aventura em linguagens de programação. Você entra novamente nos trilhos e recomeça a desenhar projetos na web, afinal o objetivo é revolucionar com criações que agregam valor é que geram resultados.
+              </p>
+              <p>
+                Na verdade, criar e desenvolver se resumem apenas em despertar - Atenção, Interesse, Desejo e Ação na vida.
+              </p>
+              <p>
+                Esse é o meu mantra e isso é o que faço da vida.
+              </p>
+            </section>
+            <div class="   col-md-1 "></div>
+            <aside class="    col-md-3  " role="complementary" >
+              <picture class="u-photo" >
+                <source media="(min-width: 36em)" srcset="img/habilidades.png  1024w,  img/habilidades.png 640w, img/habilidades.png  320w" sizes="33.3vw"/>
+                <source srcset="img/habilidades.png 2x, img/habilidades.png 1x"/>
+                <img class="img-responsive" src="img/habilidades.png"  alt="Habilidades" />
+              </picture>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section id="experiencias" class="article bg-black"  >
         <div class="container " >
           <div class="row">
             <h2 class="col-md-12 text-uppercase wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
@@ -291,8 +291,8 @@
             </li>
           </ul>
         </div>
-      </article>
-      <article id="portfolio" class="" >
+      </section>
+      <section id="portfolio" class="" >
         <div class="section-title  wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
           <div class="container">
             <div class="row">
@@ -303,7 +303,7 @@
             </div>
           </div>
         </div>
-        <section id="carousel" class="carousel slide slide-carousel wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" data-ride="carousel">
+        <div id="carousel" class="carousel slide slide-carousel wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -354,11 +354,11 @@
             </a>
           </div>
 
-        </section>
+        </div>
 
-      </article>
-      <article id="educacao" class="article" >
-        <section id="formacao" class="container " >
+      </section>
+      <section id="educacao" class="article" >
+        <div id="formacao" class="container " >
           <div class="row">
             <h2 class="col-md-12 text-uppercase wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
               <i class="fa fa-university"></i>
@@ -398,8 +398,8 @@
               </div>
             </div>
           </div>
-        </section>
-        <section id="certificacoes" class="container " >
+        </div>
+        <div id="certificacoes" class="container " >
           <div class="row">
             <h2 class="col-md-12 text-uppercase wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
               <i class="fa fa-certificate"></i>
@@ -423,12 +423,12 @@
               <p>Intensivos de 40 horas/aulas cada programa</p>
             </div>
           </div>
-        </section>
-      </article>
-      <article id="qualificacoes" class="article bg-black" >
+        </div>
+      </section>
+      <section id="qualificacoes" class="article bg-black" >
         <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
           <div class="row">
-            <section id="idiomas" class=" col-md-8">
+            <div id="idiomas" class=" col-md-8">
               <div class="row">
                 <h2 class="col-md-12 text-uppercase">
                   <i class="fa fa-language"></i>
@@ -452,8 +452,8 @@
                   </li>
                 </ul>
               </div>
-            </section>
-            <section id="habilidades" class=" col-md-4">
+            </div>
+            <div id="habilidades" class=" col-md-4">
               <div class="row">
                 <h2 class="col-md-12 text-uppercase">
                   <i class="fa fa-laptop"></i>
@@ -495,13 +495,11 @@
                 </form>
 
               </div>
-            </section>
+            </div>
           </div>
         </div>
-      </article>
-
-
-    </main>
+      </section>
+    </article>
     <footer id="footer" class="article">
       <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
         <div class="row">
