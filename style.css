@@ -106,6 +106,7 @@ footer#footer li {   color:#ffffff; }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1020px) {
+  nav#main-nav a { padding: 10px 5px;  }
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
